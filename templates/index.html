@@ -1,6 +1,8 @@
-{% extends 'base.html' %}
 
+{% extends 'base.html' %}
+{% load static %}
 {% block content %}
 <h2>Инклюд:</h2>
+<img src="{% static 'img/1.jpg' %}" alt="My image" width="50%">
 {% include 'index_.html' %}
 {% endblock %}
